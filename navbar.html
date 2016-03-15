@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<head>
+  <link href="navbar.css" rel="stylesheet">
+</head>
+<body>
+  <div class="topNavBar" ng-controller="navBarController">
+    <ul>
+      <li ng-class="{active: isActive('/index.html')}"><a href="index.html">Home</a></li>
+      <li ng-class="{active: isActive('/projects.html')}"><a href="projects.html">Projects</a></li>
+      <li><a href="http://github.com/nzayatz14">Github</a></li>
+      <li><a href="Resume.pdf">Resume</a></li>
+      <li style="float:right"><a href="http://www.cirtual.com/">Cirtual</a></li>
+    </ul>
+  </div>
+</body>
+</html>

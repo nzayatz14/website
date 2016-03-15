@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+<head>
+  <meta charset="utf-8"/>
+  <title>About</title>
+  <link href="projects.css" rel="stylesheet">
+  <link rel="import" href="navbar.html">
+</head>
+
+<body ng-app="NicksApp">
+
+  <div ng-include="'navbar.html'"></div>
+
+  <div id="section1">
+    <h1>Projects</h1>
+  </div>
+
+  <div id="section2" ng-controller="viewController2">
+    <div id="body">
+
+      <div id="appImage">
+        <img src="albumPop.jpg" style="vertical-align: middle;">
+      </div>
+
+      <div id="appDescription">
+        <h2>Album Pop</h2>
+        <p style="vertical-align: middle;">Introducing a quick and easy way to make an Album or Mixtape cover!<br><br>
+
+          Upload your own image, add the filter of your choice, and add custom text.<br>
+          Also includes the ability to add the "Explicit Content" label.<br>
+          Then, share with your friends!<br><br>
+
+          Available on iOS 7 or later.<br><br>
+
+          Developed by: Nicholas Zayatz<br>
+          Graphic Design by: Terrance Diggs (D17Productions)</p>
+        </div>
+      </div>
+
+      <div id="body">
+
+        <div id="appDescription">
+          <h2>Zipsy</h2>
+          <p style="vertical-align: middle; margin-left: 30px">Brought to you by the Developers at Cirtual, Zipsy is a location-based photo sharing app where users can post photos of things happening around them. The catch is that they must pick at least 3 friends to reveal their identity to, before posting. To all other users, their photos and comments will be anonymous! ...And to make things even more exciting, all content will disappear after 48 hours!
+          </p>
+        </div>
+
+        <div id="appImage" style="float: right; padding-left: 25px;">
+          <img src="zipsy.jpg" style="vertical-align: middle;">
+        </div>
+
+      </div>
+
+      <div id="body">
+
+        <div id="appImage">
+          <img src="econApps.png" style="vertical-align: middle;">
+        </div>
+
+        <div id="appDescription">
+          <h2>Econ Apps 2.0</h2>
+          <p style="vertical-align: middle;">EconApps 2.0 is now on the iPhone! This app brings the functionality of the original EconApps to your personal device!<br><br>
+
+            PitMarket module allows students to take on the role of buyer or seller and move about the classroom trading with other students. Knowing only their private widget values and receiving only feedback from their peers about trade prices in the room students find the market equilibrium!<br><br>
+
+            Funded by the Koch Foundation.</p>
+          </div>
+        </div>
+      </div>
+
+    </body>
+
+    <script src="thomasSucks.js"></script>
+
+    </html>

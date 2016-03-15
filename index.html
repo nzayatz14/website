@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+<head>
+  <meta charset="utf-8"/>
+  <title>Welcome To My House</title>
+  <link href="site.css" rel="stylesheet">
+  <link href="navbar.css" rel="stylesheet">
+  <link rel="import" href="navbar.html">
+</head>
+
+<body ng-app="NicksApp">
+
+  <div ng-include="'navbar.html'"></div>
+
+  <div id="section1" ng-controller="viewController1">
+    <h1>Nick Zayatz</h1>
+  </div>
+
+  <div id="section2" ng-controller="viewController2">
+    <div id="body">
+      <h2>Here we go?</h2>
+
+      <p id="IntroParagraph" ng-model="line1">I don't code a whole lot of web.</p>
+      <p ng-model="line2" ng-init="lblLine2Text='But When I do.'">{{lblLine2Text}}</p>
+      <p ng-model="line3" >Here is an expression: 5+2={{ 5+2 }}</p>
+      <p ng-model="line4">And mostly copied.</p>
+
+      <button ng-click="btnIncrementClicked()">
+        Increment
+      </button>
+
+      <p>Name: <input type="text" ng-model="name"></p>
+      <p ng-bind="name"></p>
+
+    </div>
+  </div>
+
+</body>
+
+<script src="thomasSucks.js"></script>
+
+</html>
