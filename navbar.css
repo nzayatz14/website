@@ -21,7 +21,7 @@ li a {
     font-family: "Helvetica Neue", serif;
     font-weight:100;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 8px;
     text-decoration: none;
 }
 
@@ -33,4 +33,11 @@ li a:hover:not(.active) {
 
 li .active {
     background-color: #6600ff;
+}
+
+/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+@media (min-width:481px) {
+  li a {
+    padding: 14px 16px;
+  }
 }
