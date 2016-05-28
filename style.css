@@ -1,0 +1,16 @@
+.jumbotron {
+    position: relative;
+    background: #000 url("beach.jpg") center center;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    overflow: hidden;
+    vertical-align: middle;
+    display: table-cell;
+    border-bottom: 1px solid #ffffff
+}
+
+.inner {
+  display: inline-block;
+  width: 100vw;
+}
