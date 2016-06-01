@@ -22,86 +22,99 @@
 
   <script>
   $(document).ready(function(){
-  $("#col1").fadeIn(1000);
-  $("#col2").delay(1000).fadeIn(1000);
-  $("#col3").delay(2000).fadeIn(1000);
-});
-</script>
+    $("#col1").fadeIn(1000);
+    $("#col2").delay(1000).fadeIn(1000);
+    $("#col3").delay(2000).fadeIn(1000);
+  });
+  </script>
 </head>
 
-<body ng-app="NicksApp" style="background-color: #363b74">
+<body style="background-color: #363b74" data-spy="scroll" data-target=".navbar" data-offset="50">
 
   <nav class="navbar navbar-fixed-top" id="navMenu"></nav>
 
-<div class="jumbotron">
-  <div class="row inner">
-  <div class="col-lg-2"></div>
-  <div class="col-lg-8">
-  <div class="container" style="text-align: center">
-  <h1>Nick Zayatz</h1>
-  <p style="color: #FFFFFF">CPO of Cirtual LLC</p>
-</div>
-</div>
-<div class="col-lg-2"></div>
-</div>
-</div>
-
-<div class="container" style="padding-top: 50px; z-index:1;">
-  <div class="row">
-    <div class="col-sm-4">
-      <div id="col1" class="col-sm-12" style="background-color: #e5e6f3; border-radius: 15px; display: none;">
-        <h3 style="color: #3f4262">Column 1</h3>
-        <p style="color: #3f4262">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-        <p style="color: #3f4262">For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.</p>
+  <div class="jumbotron">
+    <div class="row inner">
+      <div class="col-lg-3"></div>
+      <div class="col-lg-6">
+        <div class="container" style="text-align: center">
+          <img src="Group2.png" style="width: 100%"></img>
+          <!-- <h1 style="color: #ffffff">Nick Zayatz</h1>
+          <p style="color: #FFFFFF">CPO of Cirtual LLC</p> -->
+        </div>
       </div>
-    </div>
-    <div class="col-sm-4">
-      <div id="col2" class="col-sm-12" style="background-color: #c2c4d5; border-radius: 15px; display: none;">
-        <h3>Column 3</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div id="col3" class="col-sm-12" style="background-color: #e5e6f3; border-radius: 15px; display: none;">
-        <h3 style="color: #3f4262">Column 2</h3>
-        <p style="color: #3f4262">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-        <p style="color: #3f4262">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-      </div>
+      <div class="col-lg-3"></div>
     </div>
   </div>
 
-  <table class="table table-hover">
-    <thead>
-      <tr>
-        <th>Firstname</th>
-        <th>Lastname</th>
-        <th>Email</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>John</td>
-        <td>Doe</td>
-        <td>john@example.com</td>
-      </tr>
-      <tr>
-        <td>Mary</td>
-        <td>Moe</td>
-        <td>mary@example.com</td>
-      </tr>
-      <tr>
-        <td>July</td>
-        <td>Dooley</td>
-        <td>july@example.com</td>
-      </tr>
-    </tbody>
-  </table>
-
+  <div class="bg-white">
+    <div class="container" style="padding-top: 50px; z-index:1; padding-bottom: 50px;">
+      <h1 style="color: #3f4262; margin-top: 0px; padding-top: 50px">Who is This Guy?</h1>
+      <div class="row" style="margin-top: 30px;">
+        <div class="col-sm-4">
+          <div class="col-sm-12" style="background-color: #e5e6f3; border-radius: 15px;">
+            <img class="image" src="me.jpg" style="margin-top: 15px;">
+          </div>
+        </div>
+        <div class="col-sm-8" style="margin-top: 30px; color: #363b74;">
+          I'm Nick Zayatz (if you didn't get that already). I'm an iOS developer and the CPO of Cirtual LLC. I also get buckets on occasion 🏀🏀. I am initially from Columbia, Maryland and I am a graduate of High Point University as a Computer Science and Mathematics major.
+        </p>
+        <p>I don't have much else to say... if you want to see more about my coding skills and whatnot, checkout my Github or Resume above, or my <a href="https://www.linkedin.com/in/nickzayatz" style="color: #8689ab">LinkedIn</a> account.</p>
+      </div>
+    </div>
+  </div>
 </div>
 
-</body>
+<div id="projects" class="container" style="padding-top: 50px; z-index:1; padding-bottom: 50px;">
+  <h1>Projects</h1>
+  <div class="row" style="margin-top: 30px;">
+    <div class="col-sm-4">
+      <div id="col1" class="col-sm-12" style="background-color: #e5e6f3; border-radius: 15px; display: none;">
+        <a href="https://itunes.apple.com/us/app/album-pop/id971887514?mt=8">
+          <img class="image" src="albumPop.jpg" alt="Album Pop" style="margin-top: 15px;">
+        </a>
+        <h3 style="color: #3f4262">Album Pop</h3>
+        <p style="color: #3f4262">Introducing a quick and easy way to make an Album or Mixtape cover!<br><br>
 
-<script src="navbar.js"></script>
+          Upload your own image, add the filter of your choice, and add custom text.<br>
+          Also includes the ability to add the "Explicit Content" label.<br>
+          Then, share with your friends!<br><br>
 
-</html>
+          Available on iOS 7 or later.<br><br>
+
+          Developed by: Nicholas Zayatz<br>
+          Graphic Design by: Terrance Diggs (D17Productions)</p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div id="col2" class="col-sm-12" style="background-color: #e5e6f3; border-radius: 15px; display: none;">
+          <h3 style="color: #3f4262">Zipsy</h3>
+          <p style="color: #3f4262">Brought to you by the Developers at Cirtual, Zipsy is a location-based photo sharing app where users can post photos of things happening around them.<br><br>
+            The catch is that they must pick at least 3 friends to reveal their identity to, before posting. To all other users, their photos and comments will be anonymous!<br><br>
+            ...And to make things even more exciting, all content will disappear after 48 hours!</p>
+            <a href="http://www.zipsyapp.com/">
+              <img class="image" src="zipsy.jpg" alt="Zipsy" style="margin-bottom: 15px;">
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div id="col3" class="col-sm-12" style="background-color: #e5e6f3; border-radius: 15px; display: none;">
+            <a href="https://itunes.apple.com/us/app/econapps-2.0/id1079887018?mt=8">
+              <img class="image" src="econapps.jpg" alt="EconApps 2.0" style="margin-top: 15px;">
+            </a>
+            <h3 style="color: #3f4262">EconApps 2.0</h3>
+            <p style="color: #3f4262">EconApps 2.0 is now on the iPhone! This app brings the functionality of the original EconApps to your personal device!<br><br>
+
+              PitMarket module allows students to take on the role of buyer or seller and move about the classroom trading with other students. Knowing only their private widget values and receiving only feedback from their peers about trade prices in the room students find the market equilibrium!<br><br>
+
+              Funded by the Koch Foundation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </body>
+
+    <script src="navbar.js"></script>
+
+    </html>
